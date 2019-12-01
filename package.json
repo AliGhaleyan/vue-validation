@@ -1,0 +1,31 @@
+{
+  "name": "vue-validation-serjik",
+  "version": "1.0.0",
+  "description": "this is plugin for validation inputes in vue js :)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliGhaleyan/vue-validation.git"
+  },
+  "dependencies": {
+    "js-validation-serjik": "^1.0.4"
+  },
+  "keywords": [
+    "validation",
+    "validate",
+    "vue-validate",
+    "js-validate",
+    "vue-validation",
+    "js-validation",
+    "vuelidate"
+  ],
+  "author": "Serjik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AliGhaleyan/vue-validation/issues"
+  },
+  "homepage": "https://github.com/AliGhaleyan/vue-validation#readme"
+}
