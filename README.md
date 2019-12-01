@@ -1,4 +1,4 @@
-﻿# JS Validation!  
+﻿# Vue Validation!  
 ## install
 run this command :
 ```
