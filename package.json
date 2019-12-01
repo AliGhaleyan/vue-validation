@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/AliGhaleyan/vue-validation.git"
   },
-  "devDependencies": {
-    "js-validation-serjik": "^1.0.5"
+  "dependencies": {
+    "js-validation-serjik": "^1.0.9"
   },
   "keywords": [
     "validation",
