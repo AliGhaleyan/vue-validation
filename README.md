@@ -24,7 +24,7 @@ Vue.use(VueValidate)
 	<div>
 		// ....
 
-		<input type="text" v-validate:rulename.another.any="'label text'">
+		<input type="text" v-model="data.test" v-validate:rulename.another.any="data.test" validate-label='label text'>
 
 		// ...
 	<div>
@@ -39,7 +39,7 @@ Vue.use(VueValidate)
 
 #### example :
 ``` html
-<input type="text" v-validate:string.min:5.max:25="'first name'" />
+<input type="text" v-model="form.first_name" v-validate:string.min:5.max:25="form.first_name" validate-label='first name' />
 ```
   
   
