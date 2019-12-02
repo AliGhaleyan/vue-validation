@@ -1,44 +1,15 @@
-import Validation from 'js-validation-serjik'
-import './style.css'
-import VueHtmlValidation from './vue-html-validation'
+import VueValidation from './lib/vue-validation'
 
 const vueValidation = {
-    install(Vue, Options) {
+    install(Vue, options) {
 
         /**
          * make validate directive
          */
         Vue.directive('validate', {
-            bind(el, bind) {
-                let rules = [];
-                if (bind.arg)
-                    rules.push(...Validation.fetchRulesOfString(bind.arg));
-
-                Object.keys(bind.modifiers).map(key => {
-                    rules.push(key);
-                });
-
-                document.addEventListener('DOMContentLoaded',function () {
-                    let label = bind.value || false;
-                    let vuelidate = new VueHtmlValidation(el);
-                    let result;
-                    el.onkeyup = function () {
-                        result = Validation.validate(this.value, rules, label, true);
-
-                        vuelidate.checkError(result);
-                    };
-                });
-
-
-
-
-                // let result =
-                // let result_validate = Validation.validate();
-                // ValidationHtmlHelper.createMessageElement();
-                // console.log(bind);
-                // console.log(el, bind, 'v-validate :)');
-                // console.log(bind.expression);
-                // console.log(el.);
+            bind(el, bind, vnode) {
+                let directive = VueValidation.makeDirective(el, bind, options, vnode);
+                directive.make();
             }
         });
 
