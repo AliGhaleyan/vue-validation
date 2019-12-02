@@ -10,7 +10,6 @@ const vueValidation = {
          */
         Vue.directive('validate', {
             bind(el, bind) {
-                console.log(el, bind);
                 let rules = [];
                 if (bind.arg)
                     rules.push(...Validation.fetchRulesOfString(bind.arg));

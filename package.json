@@ -11,7 +11,7 @@
     "url": "git+https://github.com/AliGhaleyan/vue-validation.git"
   },
   "dependencies": {
-    "js-validation-serjik": "^1.0.9"
+    "js-validation-serjik": "^1.1.4"
   },
   "keywords": [
     "validation",
