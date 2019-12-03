@@ -45,11 +45,11 @@ Vue.use(VueValidate)
 
 #### check all validates :
 ```javascript
-import { checkAll } from 'vue-validation-serjik';
+import { checkAllValidations } from 'vue-validation-serjik';
 
 //  use function in any where
-checkAll();
-
+//  return result boolean if has an error it is true and else it is false
+let result = checkAllValidations();
 ```
   
   

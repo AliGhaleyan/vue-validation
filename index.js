@@ -27,10 +27,15 @@ const vueValidation = {
     },
 };
 
-export function checkAll() {
+export function checkAllValidations() {
+    let fails = false, result;
     directives.map(directive => {
-        directive.checkValid();
+        result = directive.checkValid();
+        if (result.fails == true)
+            fails = true;
     });
+
+    return fails;
 };
 
 export default vueValidation;
