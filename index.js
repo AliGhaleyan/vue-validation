@@ -3,10 +3,6 @@ import VueValidation from './lib/vue-validation'
 let directives = [], key;
 const vueValidation = {
     install(Vue, options) {
-
-        /**
-         * make validate directive
-         */
         Vue.directive('validate', {
             bind(el, bind, vnode) {
                 let directive = VueValidation.makeDirective(el, bind, options, vnode);
@@ -15,17 +11,17 @@ const vueValidation = {
             },
             update(el, bind, vnode) {
                 let directive = directives.find(item => item.el == el);
-                if (! directive)
-                    return ;
+                if (!directive)
+                    return;
 
                 directive.update(el, bind, vnode);
 
                 directive.checkValid();
             }
         });
-
     },
 };
+
 
 export function checkAllValidations() {
     let fails = false, result;
