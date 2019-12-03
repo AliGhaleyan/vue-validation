@@ -41,6 +41,16 @@ Vue.use(VueValidate)
 ``` html
 <input type="text" v-model="form.first_name" v-validate:string.min:5.max:25="form.first_name" validate-label='first name' />
 ```
+
+
+#### check all validates :
+```javascript
+import { checkAll } from 'vue-validation-serjik';
+
+//  use function in any where
+checkAll();
+
+```
   
   
 ## Rules :  
@@ -61,4 +71,4 @@ Vue.use(VueValidate)
 |phone           |check phone number             |`phone`|
 |boolean         |check value is bool            |`boolean` check is true , false , 0 or 1|
 |url             |check value is current url address|`url` check is current target|
-|confirm         |check is equal with passed value|`confirm:[{your variable}]` you can pass variable of component like `confirm:[form.password]`|
+|confirm         |check is equal with passed value|`confirm:({your variable})` you can pass variable of component like `confirm:(form,password)`|
