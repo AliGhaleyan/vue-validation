@@ -1,6 +1,6 @@
 {
   "name": "vue-validation-serjik",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "this is plugin for validation inputes in vue js :)",
   "main": "index.js",
   "scripts": {
