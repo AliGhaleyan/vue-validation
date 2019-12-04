@@ -9,15 +9,6 @@ const vueValidation = {
                 directive.make();
                 directives.push(directive);
             },
-            update(el, bind, vnode) {
-                let directive = directives.find(item => item.el == el);
-                if (!directive)
-                    return;
-
-                directive.update(el, bind, vnode);
-
-                directive.checkValid();
-            }
         });
     },
 };
