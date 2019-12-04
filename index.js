@@ -17,7 +17,7 @@ const vueValidation = {
 export function checkAllValidations() {
     let fails = false, result;
     directives.map(directive => {
-        result = directive.checkValid();
+        result = directive.checkValid(directive.bind.value);
         if (result.fails == true)
             fails = true;
     });
