@@ -25,4 +25,9 @@ export function checkAllValidations() {
     return fails;
 };
 
+export function resetAllValidations() {
+    directives = [];
+    return true;
+}
+
 export default vueValidation;

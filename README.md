@@ -51,6 +51,16 @@ import { checkAllValidations } from 'vue-validation-serjik';
 //  return result boolean if has an error it is true and else it is false
 let result = checkAllValidations();
 ```
+
+#### reset all validates :
+```javascript
+import { resetAllValidations } from 'vue-validation-serjik';
+
+//  use function in any where
+//  return result boolean if has an error it is true and else it is false
+//  when change component run this function
+resetAllValidations(); // return true
+```
   
   
 ## Rules :  
