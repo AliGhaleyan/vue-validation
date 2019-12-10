@@ -26,7 +26,7 @@ export function checkAllValidations() {
 };
 
 export function resetAllValidations() {
-    directives = [];
+    directives.length = 0;
     return true;
 }
 
